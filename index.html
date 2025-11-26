@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration forms</title>
+    <style>
+        body{
+            box-shadow: 0 0 5px;
+            padding:10px;
+            background-color: solid white;
+            border-radius: 5px;
+            border: none;
+            width:350px;
+            margin:30px auto;
+        }
+        h1{
+            color: rgb(63, 218, 63);
+        }
+        label{
+            display: flex;
+        }
+        input,select{
+            border:1px solid rgb(178, 176, 176);
+            border-radius: 5px;
+            width: 100%;
+        }
+        .button{
+            background-color: rgb(63, 227, 63);
+            color:white;
+            text-align: center;
+            border-color:white;
+            border-radius: 5px;
+            width:100%;
+            padding: 3px;
+            border: none;
+        }
+        .button:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Registration Form</h1>
+        <form class="id">
+            <label for="Fname">First Name:</label>
+            <input type="text" id="Fname" name="firstname"  required><br><br>
+            <label for="Lname" >Last Name:</label>
+            <input type="text" id="Lname" name="Lname" required><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" ><br><br>
+            <label for="password">Password:</label>
+            <input type="text" id="pasword" name="password"><br><br>
+            <label for="re">Re-enter Password:</label>
+            <input type="text" id="re" name="re"><br><br>
+            <label for="Contact">Contact:</label>
+            <input type="text" id="Contact" name="contact"><br><br>
+            <label for="Gender">Gender:</label>
+            <select>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">others</option>
+            </select><br><br>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
