@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Registration form</title>
+    <style>
+        .box {
+            justify-content: space-evenly;
+            background-color: rgb(215, 213, 211);
+            margin: 30px auto;
+            width: 500px;
+            padding: 10px;
+            box-shadow: 0 0 10px;
+
+        }
+
+        input {
+            border-radius: 4px;
+            border: none;
+            border: 1px solid #c0b7b7;
+            padding: 10px;
+             justify-content:space-evenly;
+        }
+        .g{
+            display: flex;
+            padding:0px;
+            margin: 10px;
+            justify-content: space-evenly;
+
+        }
+        h2{
+            text-align: center;
+        }
+        .apply{
+            background-color: rgb(43, 166, 43);
+            width:100%;
+            color:white;
+            border:none;
+            border:1px solid #c2bbbb;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Gym Registration Form</h2>
+        <input type="text" name="name" placeholder="Name">
+        <input type="radio" name="gender">
+        <label>Male</label>
+        <input type="radio" name="gender">
+        <label>Female</label><br><br>
+        <input type="text" name="Email" placeholder="Email">
+        <input type="text" name="Phone" placeholder="Phone"><br><br>
+        <input type="type" placeholder="Your current Weight(lbs)">
+        <input type="text" placeholder="Desired Weight (lbs)"><br><br>
+        <input type="text" placeholder="Height">
+        <input type="text" placeholder="EMI"><br><br>
+        <input type="text" placeholder="Addres" size="50"><br><br>
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="State"><br><br>
+        <input type="text" placeholder="Zip Code">
+        <input type="text" placeholder="Country">
+        <div class="g">
+            <div>
+                <h4>Do you require a personal trainer?</h4>
+                <input type="radio" name="trainer">
+                <label for=""> Yes</label><br>
+                <input type="radio" name="trainer">
+                <label for=""> No</label>
+            </div>
+            <div>
+                <h4>Have you been in a Gym before?</h4>
+                <input type="radio" name="gym">
+                <label for=""> Yes</label><br>
+                <input type="radio" name="gym">
+                <label for=""> No</label><br><br>
+            </div>
+        </div>
+
+        <button class="apply">Apply</button>
+
+    </div>
+</body>
+
+</html>
